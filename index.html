@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Perfil Gamer FURIA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="quiz-container">
+        <h1>Descubra seu Perfil FURIOSO! 🐆🔥</h1>
+
+        <form id="quiz-form">
+
+            <div class="question">
+                <label>1. Quem é seu jogador favorito da FURIA?</label>
+                <input type="text" name="jogador" required>
+            </div>
+
+            <div class="question">
+                <label>2. Qual seu estilo de jogo favorito?</label>
+                <select name="estilo" required>
+                    <option value="">Selecione</option>
+                    <option value="agressivo">Agressivo</option>
+                    <option value="estrategico">Estratégico</option>
+                    <option value="suporte">Suporte</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label>3. Já participou de eventos da FURIA?</label>
+                <input type="radio" name="evento" value="sim"> Sim
+                <input type="radio" name="evento" value="nao">Não
+            </div>
+
+            <div class="question">
+                <label>4. O que você mais gosta na FURIA?</label>
+                <textarea name="gosta" required></textarea>
+            </div>
+
+            <div class="question">
+                <label>5. Upload de Documento (opcional):</label>
+                <input type="file" name="documento">
+            </div>
+
+            <div class="question">
+                <label>6. Cole o link de uma rede social sua:</label>
+                <input type="url" name="rede_social" required>
+            </div>
+
+            <button type="submit">Ver meu perfil!</button>
+
+        </form>
+    
+        <div id="result" class="hidden"></div>
+        
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
